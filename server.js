@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 // Load Firebase Admin credentials
-const serviceAccount = require('./serviceAccountKey.json');
+const serviceAccount = require('/etc/secrets/serviceAccountKey.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
